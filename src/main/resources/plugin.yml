@@ -1,0 +1,17 @@
+name: RegionRegen
+version: '${version}'
+main: com.minecraft.regionregen.RegionRegenPlugin
+api-version: 1.21
+depend: [WorldEdit]
+authors: [YourName]
+description: A plugin to manage and regenerate regions in your Minecraft world
+commands:
+  regionregen:
+    description: Main command for managing regions
+    usage: /<command> [create|list|delete|regenerate|help]
+    aliases: [rr]
+    permission: regionregen.admin
+permissions:
+  regionregen.admin:
+    description: Allows access to all RegionRegen commands
+    default: op

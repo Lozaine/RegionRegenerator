@@ -1,0 +1,33 @@
+# Region Regen Configuration
+
+# Message prefix
+prefix: '&8[&bRegionRegen&8] &7'
+
+# Region regeneration settings
+regeneration:
+  # Delay between region block regeneration (in ticks)
+  block-delay: 1
+  # Number of blocks to regenerate per tick (higher values may cause lag)
+  blocks-per-tick: 50
+  # Whether to notify players near the region when regeneration starts
+  notify-nearby-players: true
+  # Radius (in blocks) around a region to notify players
+  notification-radius: 100
+
+# Storage settings
+storage:
+  # Save regions after every modification (recommended)
+  save-on-modify: true
+  # Automatic backup of regions file
+  auto-backup: true
+  # Backup interval in minutes (only if auto-backup is true)
+  backup-interval: 60
+
+# GUI settings
+gui:
+  # Title of the main GUI
+  main-title: 'Region Manager'
+  # Title of the region info GUI
+  info-title: 'Region Info: %region%'
+  # Number of regions to display per page
+  regions-per-page: 28

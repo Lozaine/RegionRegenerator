@@ -33,11 +33,11 @@ public class WorldEditUtils {
             return session.getSelection(bukkitPlayer.getWorld());
         } catch (IncompleteRegionException e) {
             // Player doesn't have a complete selection
-            MessageUtils.sendMessage(player, "§cYou don't have a complete WorldEdit selection.");
+            com.minecraft.regionregen.utils.MessageUtils.sendMessage(player, "§cYou don't have a complete WorldEdit selection.");
             return null;
         } catch (Exception e) {
             // Other exceptions
-            MessageUtils.sendMessage(player, "§cError getting your WorldEdit selection: " + e.getMessage());
+            com.minecraft.regionregen.utils.MessageUtils.sendMessage(player, "§cError getting your WorldEdit selection: " + e.getMessage());
             e.printStackTrace();
             return null;
         }
